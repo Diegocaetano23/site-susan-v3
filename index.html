@@ -53,11 +53,11 @@
       }
 
       .imagem {
-        width: 100vw; /* Defina a largura igual à largura da viewport */
-        height: auto; /* Mantenha a proporção da imagem */
-        margin-left: auto; /* Alinhe à esquerda */
-        margin-right: auto; /* Alinhe à direita */
-      }
+  width: 100vw; /* Defina a largura igual à largura da viewport */
+  height: auto; /* Mantenha a proporção da imagem */
+  margin-left: auto; /* Alinhe à esquerda */
+  margin-right: auto; /* Alinhe à direita */
+}
 
       .texto-principal {
       position: absolute; /* posicionar absolutamente dentro da .capa */
@@ -167,11 +167,25 @@
 
 
           @media screen and (min-width: 1024px) {
+            body {
+    overflow-x: hidden; /* Adicione essa linha para ocultar a barra de rolagem horizontal */
+  }
 
-            .textos-horizontais{
-              margin-left: 20px !important;
-              margin-top: 30px !important;
-            }
+  .capa {
+    overflow-x: hidden; /* Adicione essa linha para ocultar a barra de rolagem horizontal na capa */
+  }
+
+  .imagem {
+    max-width: 100%; /* Remova essa linha para evitar que a imagem horizontal estique além da tela */
+  }
+
+  .topnav {
+    padding: 0 20px; /* Adicione padding à barra de navegação para compensar o espaço horizontal */
+  }
+
+  .capahorizontaldegrade1 {
+    margin-right: -20px; /* Reduza a margem direita para compensar qualquer deslocamento */
+  }
             
             .texto-capa1 {
           
@@ -764,6 +778,15 @@
     }
   }
 
+  .slide-img {
+  width: 100%; /* Ajusta a largura da imagem para ocupar toda a largura do contêiner */
+}
+
+@media screen and (max-width: 320px) {
+  .slide-img {
+    width: 80%; /* Ajusta a largura da imagem para 80% do contêiner em telas menores que 320px */
+  }
+}
 
         </style>
       </head>
