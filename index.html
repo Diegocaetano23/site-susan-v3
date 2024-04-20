@@ -6,12 +6,30 @@
         <title>Psicóloga Susan Elise</title>
         <style>
           body {
+            margin-bottom: 0;
             margin: 0;
             padding: 0;
             font-family: Arial, sans-serif;
             background-color: #ffffff; /* cor rosa claro */
             overflow-x: hidden; 
           }
+
+          .informacoes {
+  background-color: #faddbd;
+  height: 200px; /* altura de até 100px */
+  margin: 20px auto 0; /* remover a margem branca e adicionar margem superior e inferior */
+  display: flex; /* usar flexbox */
+  align-items: center; /* centralizar verticalmente */
+  justify-content: center; /* centralizar horizontalmente */
+}
+
+
+    .informacoes img {
+  
+      max-width: 200px; /* tamanho de até 80px para a imagem */
+      display: block; /* centralizar a imagem */
+      margin: 0 auto; /* centralizar a imagem */
+    }
 
           .titulo-depoimentos{
             font-weight: bolder;
@@ -50,6 +68,7 @@
         justify-content: center; /* Adicionado */
         align-items: center; /* Adicionado */
         text-align: center;
+        margin: 0;
       }
 
       .imagem {
@@ -215,16 +234,13 @@
           }
 
 
-
-
-
           @media screen and (min-width: 768px) {
 
 
             .topnav {
         background-color: #ffffff;
         overflow: hidden;
-        height: 87px;
+        height: 95px;
         display: flex; /* Adicionado */
         justify-content: space-between; /* Adicionado */
         align-items: center; /* Adicionado */
@@ -378,6 +394,23 @@
               margin-left: 0; /* remover a margem à esquerda */
               margin-right: auto; /* alinhar à direita */
             }
+
+            @media screen and (max-width: 320px) {
+
+  .mySlides img {
+  max-width: 80%; /* Limita a largura máxima da imagem ao tamanho do contêiner */
+  max-height: 300px; /* Define uma altura máxima para a imagem */
+  height: auto; /* Mantém a proporção da imagem */
+  margin: 0 auto; /* Centraliza horizontalmente */
+  display: block; /* Garante que a imagem seja tratada como um bloco */
+} 
+
+
+  .textos-horizontais {
+    margin-top: -80px; /* ou o valor desejado para ajustar */
+  }
+}
+
       }
 
       
@@ -783,9 +816,70 @@
 }
 
 @media screen and (max-width: 320px) {
-  .slide-img {
-    width: 80%; /* Ajusta a largura da imagem para 80% do contêiner em telas menores que 320px */
+  
+  .texto-capa1{
+    margin-top: -15x;
+    font-size: 22px;
+    font-weight: bold;
   }
+
+  .texto-capa2{
+    font-size: 12px;
+    margin-top: -25px;
+  }
+
+  .texto-capa3{
+
+  }
+
+  .mySlides img {
+  max-width: 80%; /* Limita a largura máxima da imagem ao tamanho do contêiner */
+  max-height: 300px; /* Define uma altura máxima para a imagem */
+  height: auto; /* Mantém a proporção da imagem */
+  margin: 0 auto; /* Centraliza horizontalmente */
+  display: block; /* Garante que a imagem seja tratada como um bloco */
+} 
+
+}
+
+@media screen and (max-width: 375px) {
+
+  .texto-capa1{
+    margin-top: -30px;
+    font-size: 25px;
+    font-weight: bold;
+  }
+
+  .texto-capa2{
+    font-size: 12px;
+    margin-top: -25px;
+  }
+
+  .texto-capa3{
+    font-size: 20px;
+    
+  }
+
+
+  .mySlides img {
+  max-width: 80%; /* Limita a largura máxima da imagem ao tamanho do contêiner */
+  max-height: 300px; /* Define uma altura máxima para a imagem */
+  height: auto; /* Mantém a proporção da imagem */
+  margin: 0 auto; /* Centraliza horizontalmente */
+  display: block; /* Garante que a imagem seja tratada como um bloco */
+} 
+}
+
+@media screen and (max-width: 425px) {
+
+.mySlides img {
+max-width: 80%; /* Limita a largura máxima da imagem ao tamanho do contêiner */
+max-height: 300px; /* Define uma altura máxima para a imagem */
+height: auto; /* Mantém a proporção da imagem */
+margin: 0 auto; /* Centraliza horizontalmente */
+display: block; /* Garante que a imagem seja tratada como um bloco */
+} 
+
 }
 
         </style>
@@ -936,11 +1030,8 @@
         </div>
        
 
-        <div class="informacoes" style="background-color: #dadada;margin-top: -4px;">
-          <br><br><br>
-      
-
-        
+        <div class="informacoes">
+         <img src="./src/css/img/logo work nobg.png" alt="">
         </div>
         
         <div class="whapp">
