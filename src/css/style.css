@@ -131,6 +131,7 @@ background-color: #d9006f; /* cor rosa mais escura ao passar o mouse */
   color: rgb(41, 41, 104);
   font-size: 45px;
   font-weight: bold;
+  
 
 }
 
@@ -383,6 +384,10 @@ font-size: 24px;
       height: 250px; /* Altura dos quadrados */
       background-color: #ffffff; /* cor de fundo dos quadrados */
       margin-bottom: 20px; /* Espaçamento abaixo dos quadrados */
+    }
+
+    .txt{
+      text-align: justify;
     }
 
     .quem-sou-eu {
