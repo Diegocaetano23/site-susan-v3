@@ -15,7 +15,7 @@
 
           <div class="capa">
             <img class="imagem" src="./src/css/img/capahorizontaldegrade1.png" alt="">
-            <img class="imagem-vertical1" src="./src/css/img/capaverticalok1.png" alt="">
+            <img class="imagem-vertical1" src="./src/css/img/capaverticalok2.png" alt="">
 
 
             <div class="textos-horizontais">
@@ -42,10 +42,7 @@
               
               <p class="titulo-quemsoueu"></p>
 
-              <div class="foto-quemsoueu">
-                <img src="./src/css/img/backsiteok.png" alt="" class="vertical">
-              </div>
-
+         
               <p class="nomesusan">Olá! Sou Susan Elise,</p>
 
                 <p class="textosusan"><br> Psicóloga formada pela <b>Universidade Federal de Roraima</b>.<b> Sou apaixonada pela minha profissão e amo poder fazer a diferença na vida de meus pacientes.</b> 
@@ -53,6 +50,11 @@
                 e possuo <b>Formação em Desenvolvimento Humano na Infância e Adolescência, pela USP, Universidade Federal de São Paulo.</b> A terapia online que ofereço vai além das fronteiras geográficas, atendendo pacientes em todo o Brasil e brasileiros no exterior.     
                 Entendo que a busca por terapia muitas vezes surge diante de um sofrimento que nos paralisa, comumente fazendo com que acreditemos que não há motivos para termos esperanças sobre a possibilidade de melhoria. Nesse sentido, <b>a minha missão é</b> proporcionar um espaço ético, sigiloso, humanizado,
                  acolhedor e personalizado para cada demanda e paciente. <b>Estou comprometida em guiá-lo em sua jornada de autoconhecimento, transformação emocional e fomento da sua saúde mental, com ferramentas totalmente baseadas em estudos científicos, com comprovação de suas eficácias.
+                  <div class="foto-quemsoueu">
+                    <img src="./src/css/img/backsiteok.png" alt="" class="vertical">
+                  </div>
+    
+
             </div>
           </div>
 
@@ -73,16 +75,23 @@
               <div class="quadrado-servico"style="background-image: url(./src/css/img/logoquadrado.png)";><p>Autoestima</p><p1 class="txt">É a avaliação subjetiva e geral que uma pessoa faz de si mesma, influenciando sua percepção de valor pessoal, competência e merecimento.  </p1></div>
               <div class="quadrado-servico"style="background-image: url(./src/css/img/logoquadrado.png)";><p>Disturibios emocionais</p><p1 class="txt">Representam desequilíbrios significativos no processamento e regulação das emoções, impactando negativamente o bem-estar e o funcionamento psicossocial.</p1></div>
               <div class="quadrado-servico"style="background-image: url(./src/css/img/logoquadrado.png)";><p>Compulsão alimentar</p><p1 class="txt">Um transtorno psicológico caracterizado por episódios recorrentes de ingestão excessiva e descontrolada de alimentos, frequentemente acompanhados por sentimentos de culpa e remorso.</p1></div>
-              <div class="quadrado-servico"style="background-image: url(./src/css/img/logoquadrado.png)";></div>
-              <div class="quadrado-servico"style="background-image: url(./src/css/img/logoquadrado.png)";></div>
+              <div class="quadrado-servico"style="background-image: url(./src/css/img/logoquadrado.png)";><p>Pânico</p><p1 class="txt">É um transtorno de ansiedade caracterizado por ataques repentinos e intensos de medo ou desconforto, acompanhados por sintomas físicos e emocionais intensos, como palpitações, tremores, falta de ar e medo de morrer ou perder o controle.</p1></div>
+              <div class="quadrado-servico"style="background-image: url(./src/css/img/logoquadrado.png)";><p>Relacionamentos</p><p1 class="txt">P odem resultar de padrões disfuncionais de interação, falta de comunicação eficaz e dificuldades em estabelecer vínculos saudáveis.
+
+
+
+
+
+
+              </p1></div>
             </div>
             <button class="btn-servicos" onclick="window.open('https://wa.me/5512982560443', '_blank')">Agendar consulta</button><br><br><br>
 
           </div>
 
           <div class="depoimentos">
-            <p class="titulo-depoimentos"> Veja alguns depoimentos</p>
-
+            <p class="titulo-depoimentos">Veja alguns depoimentos</p>
+        
             <div class="slideshow-container">
               <!-- Full-width images with number and caption text -->
               <div class="mySlides fade">
@@ -117,115 +126,55 @@
         
               <br><br><br>
               <button class="btn-servicos" onclick="window.open('https://wa.me/5512982560443', '_blank')">Agendar consulta agora!</button><br><br><br>
-            
-    
-              <script>
-                var slideIndex = 1;
-                showSlides(slideIndex);
+            </div>
+          </div>
+        
+          <!-- Seu conteúdo HTML continua aqui -->
+        
+          <script>
+            var slideIndex = 1;
+            showSlides(slideIndex);
+        
+            function plusSlides(n) {
+              showSlides(slideIndex += n);
+            }
+        
+            function currentSlide(n) {
+              showSlides(slideIndex = n);
+            }
+        
+            function showSlides(n) {
+              var i;
+              var slides = document.getElementsByClassName("mySlides");
+              var dots = document.getElementsByClassName("dot");
+              if (n > slides.length) {slideIndex = 1}
+              if (n < 1) {slideIndex = slides.length}
+              for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+              }
+              for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+              }
+              slides[slideIndex-1].style.display = "block";
+              dots[slideIndex-1].className += " active";
               
-                function plusSlides(n) {
-                  showSlides(slideIndex += n);
-                }
-              
-                function currentSlide(n) {
-                  showSlides(slideIndex = n);
-                }
-              
-                function showSlides(n) {
-                  var i;
-                  var slides = document.getElementsByClassName("mySlides");
-                  var dots = document.getElementsByClassName("dot");
-                  if (n > slides.length) {slideIndex = 1}
-                  if (n < 1) {slideIndex = slides.length}
-                  for (i = 0; i < slides.length; i++) {
-                      slides[i].style.display = "none";
-                  }
-                  for (i = 0; i < dots.length; i++) {
-                      dots[i].className = dots[i].className.replace(" active", "");
-                  }
-                  slides[slideIndex-1].style.display = "block";
-                  dots[slideIndex-1].className += " active";
-                  setTimeout(function(){ // Definir um temporizador para avançar automaticamente para o próximo slide após 4 segundos
-                    plusSlides(1); // Avançar para o próximo slide
-                  }, 9000); // 4000 milissegundos = 4 segundos
-                }
-              </script>
+              // Define um novo temporizador
+              clearTimeout(timer); // Limpa o temporizador atual
+              timer = setTimeout(function () {
+                plusSlides(1); // Avança para o próximo slide após 9 segundos
+              }, 9000);
+            }
+        
+            var timer = setTimeout(function () {
+              plusSlides(1); // Inicia o temporizador
+            }, 9000);
+          </script>
               
               
       <br> <br><br>
     </div>
-          </div>
+  </div>
         
-
-
-          <div class="duvidas-frequentes" style="background-color: #faddbd;;">
-
-            <p>Dúvidas frequentes</p>
-
-            <button class="accordion">Section 1</button>
-<div class="panel">
-  <p>Lorem ipsum...</p>
-</div>
-
-<button class="accordion">Section 2</button>
-<div class="panel">
-  <p>Lorem ipsum...</p>
-</div>
-
-<button class="accordion">Section 3</button>
-<div class="panel">
-  <p>Lorem ipsum...</p>
-</div>
-
-<style>/* Style the buttons that are used to open and close the accordion panel */
-  .accordion {
-    background-color: #ffffff;;
-    color: #444;
-    cursor: pointer;
-    padding: 18px;
-    width: calc(100% - 400px); /* Calcula a largura com margens */
-    text-align: left;
-    border: none;
-    outline: none;
-    transition: 0.4s;
-    margin-left: 200px;
-    margin-right: 200px;
-  }
-  
-  /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
-  .active, .accordion:hover {
-    background-color: #ccc;
-  }
-  
-  /* Style the accordion panel. Note: hidden by default */
-  .panel {
-    padding: 0 18px;
-    background-color: white;
-    display: none;
-    overflow: hidden;
-
-    margin-left: 200px;
-    margin-right: 200px;
-  }</style>
-
-  <script>var acc = document.getElementsByClassName("accordion");
-    var i;
-    
-    for (i = 0; i < acc.length; i++) {
-      acc[i].addEventListener("click", function() {
-        /* Toggle between adding and removing the "active" class,
-        to highlight the button that controls the panel */
-        this.classList.toggle("active");
-    
-        /* Toggle between hiding and showing the active panel */
-        var panel = this.nextElementSibling;
-        if (panel.style.display === "block") {
-          panel.style.display = "none";
-        } else {
-          panel.style.display = "block";
-        }
-      });
-    }</script>
 
 
 <div class="contatos" style="background-color: white;">Contatos</div>
