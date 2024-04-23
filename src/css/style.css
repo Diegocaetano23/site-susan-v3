@@ -46,10 +46,6 @@ margin: 0 auto; /* centralizar a imagem */
   }
 
 
-  
-
-
-
   .topnav {
 background-color: #ffffff;
 overflow: hidden;
@@ -254,6 +250,7 @@ background-color: #d9006f; /* Cor rosa mais escura ao passar o mouse */
   @media screen and (min-width: 768px) {
 
 
+    
     .topnav {
 background-color: #ffffff;
 overflow: hidden;
@@ -811,6 +808,44 @@ display: block; /* Garante que a imagem seja tratada como um bloco */
 } 
 
 @media only screen and (max-width: 600px) {
+
+  /* efeitos do texto capa tela pequena */
+
+  .texto-capa1, .texto-capa2, .texto-capa3 {
+    opacity: 0;
+    transform: translateX(-50%);
+    animation: aparecer 1s forwards;
+  }
+
+  @keyframes aparecer {
+    from {
+      opacity: 0;
+      transform: translateX(-50%);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+  .texto-capa3 {
+    transform: translateX(50%);
+    animation: aparecerDireita 1s forwards;
+  }
+
+  @keyframes aparecerDireita {
+    from {
+      opacity: 0;
+      transform: translateX(50%);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  } 
+
+    /* efeitos do texto capa tela pequena fim */
+
 .testimonial-img {
 width: 100%; /* Defina o tamanho desejado para as imagens de depoimento */
 height: auto; /* Mantenha a proporção da imagem */
